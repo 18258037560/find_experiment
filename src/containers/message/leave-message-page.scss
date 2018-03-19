@@ -1,0 +1,53 @@
+@import '../../commons/mixins/bottom-button';
+
+.leave-message-page {
+    padding: 0 15px 50px 15px;
+
+    .message-input-item {
+        margin-top: 20px;
+        label {
+            font-weight: 600;
+        }
+
+        .message-content-container {
+            margin-top: 12px;
+            textarea {
+                background-color: #F6F6F7;
+                height: 200px;
+                width: 100%;
+                border: 1px solid #ddd;
+            }
+        }
+
+        .contact-info-container {
+            margin-top: 12px;
+            textarea {
+                background-color: #F6F6F7;
+                height: 70px;
+                width: 100%;
+                border: 1px solid #eee;
+            }
+        }
+    }
+
+    .confirm {
+        @include bottom-button-container;
+        height: 56px;
+        padding: 0 15px 6px;
+        button {
+            @include bottom-button;
+        }
+    }
+}
+
+.leave-message-confirm-dialog {
+    .success-message {
+        padding: 10px 30px;
+    }
+    button {
+        width: 100%;
+        display: block;
+        border: none;
+        color: #888;
+    }
+}

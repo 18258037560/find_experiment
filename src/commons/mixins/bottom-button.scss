@@ -1,0 +1,21 @@
+@mixin bottom-button-container {
+    position: fixed;
+    //z-index: 7;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin bottom-button {
+    background: #2EB872;
+    border: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+
+    &[disabled] {
+        background: #ccc;
+    }
+}

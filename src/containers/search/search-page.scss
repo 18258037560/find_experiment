@@ -1,0 +1,21 @@
+@import '../../commons/mixins/search-box';
+
+.search-page {
+    .input-box {
+        @include search-box;
+    }
+
+    .search-history {
+        margin-top: 40px;
+        padding-left: 20px;
+        background: #fff;
+        .search-history-list {
+            color: rgb(140, 149, 159);
+            margin-top: 15px;
+            padding-left: 10px;
+            .history-item {
+                padding: 8px;
+            }
+        }
+    }
+}

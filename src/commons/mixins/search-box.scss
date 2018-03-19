@@ -1,0 +1,33 @@
+@mixin search-box {
+    height: 42px;
+    align-items: center;
+    display: flex;
+    background-color: #F6F6F7;
+    .search-icon {
+        margin-left: 15px;
+        padding: 10px 2px 3px;
+        img {
+            width: 16px;
+        }
+    }
+
+    .search-input {
+        flex: 1;
+        background: #F6F6F7;
+        color: #000;
+        input {
+            background: #F6F6F7;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+    .remove-icon {
+        margin: 0 10px;
+        padding-top: 7px;
+        padding-right: 7px;
+        img {
+            width: 18px;
+        }
+    }
+}
